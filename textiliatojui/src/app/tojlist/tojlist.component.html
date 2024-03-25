@@ -1,0 +1,31 @@
+<div class="p-grid container table-responsive ">
+    <h2 class="text-500 font-small mb-100 "><em>Tøj List</em></h2>
+  <!-- {{state| json}} -->
+  
+            <p-table [value]="state.$clothes" [tableStyle]="{ 'min-width': '50rem' }">
+            <ng-template pTemplate="header">
+            <tr class="col-12">
+                <th scope="col-1" class="text-center p-1 sm bg-primary font-bold">Id</th>
+                <th scope="col-2" class="text-center p-1 sm bg-primary font-bold">Name</th>
+                <th scope="col-1" class="text-center p-1 sm bg-primary font-bold">Size</th>
+                <th scope="col-2" class="text-center p-1 sm bg-primary font-bold">Color</th>
+                <th scope="col-3" class="text-center p-1 sm bg-primary font-bold">Created-time</th>
+                <th scope="col-3" class="text-center p-1 sm bg-primary font-bold">Updated-time</th>
+             
+            </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-cloth>
+                <tr class="border-bottom-1 col-12">
+                <td class="text-center p-1 sm font-bold">{{cloth.id}}</td>
+                <td class="text-center p-1 sm font-bold">{{cloth.name}}</td>
+                <td class="text-center p-1 sm font-bold">{{cloth.size}}</td>
+                <td class="text-center p-1 sm font-bold">{{cloth.color}}</td>
+                <td class="text-center p-1 sm font-bold">{{cloth.created_timestamp | date: 'dd/MM/yyyy HH:mm:ss' }}</td>
+                <td class="text-center p-1 sm font-bold">{{cloth.updated_timestamp | date: 'dd/MM/yyyy HH:mm:ss' }}</td>
+            </tr>
+</ng-template>
+</p-table>
+    <p-button label="AddTøj" severity="primary" (click)="goToAddToj()" styleClass="p-10 shadow-2 p-rounded-12"></p-button>
+</div>
+
+  

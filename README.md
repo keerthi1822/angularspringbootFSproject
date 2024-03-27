@@ -15,7 +15,7 @@ angular and spring boot full stack project.
 - Here I used Java Springboot, and Spring JPA to store data in a H2 in-memory database.
 
 Steps to Run the Project:
-1. First clone the project from GitHub using the command "git clone <git repo URL"
+1. First clone the project from GitHub using the command "git clone https://github.com/keerthi1822/angularspringbootFSproject"
 2. Please open the backend SpringbootBE folder in your preferred IDE for example Visual Studio or Eclipse.
 3. Run the code with run as Java application on right-clicking on the file "AssignmentApplication.java".
 4. After confirming the code is running smoothly, Open the frontend  folder in an IDE that you are comfortable with.
@@ -29,5 +29,5 @@ Steps to Run the Project:
    ## How to open H2 memory DB
    after running the spring boot application open the browser with "localhost:8080/h2-console"  which opens a form.
 
-   test the connection and if everything goes well you can see the editor where you can wrrite the query to insert and view the data.
+   test the connection and if everything goes well you can see the editor where you can write the query to insert and view the data.
 
